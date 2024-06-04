@@ -1145,7 +1145,7 @@ $(document).ready(function() {
 
 		// ----------------------------------------
 		// MAIN JS
-		var mainJsDownload = fetchOrDownloadAndStore(db, Module.locateFile('https://dl.dropboxusercontent.com//scl/fi/r0ej6n449k5hn5nme9ryo/MyProject2-HTML5-Shipping.data?rlkey=gwdcgdojj130182vdolx2oan1&st=l963eoo7&dl=0'), 'blob').then(function(data) {
+		var mainJsDownload = fetchOrDownloadAndStore(db, Module.locateFile('https://rawcdn.githack.com/AIcontents/test_tilda/d341f98ab6cd1254bf86856ad7b632665f191aaa/MyProject2-HTML5-Shipping.js'), 'blob').then(function(data) {
 				Module['mainScriptUrlOrBlob'] = data;
 				return addScriptToDom(data).then(function() {
 					addRunDependency('wait-for-compiled-code');
